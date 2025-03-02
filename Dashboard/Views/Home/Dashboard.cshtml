@@ -1,0 +1,202 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<!-- Inicio da pagina -->
+<div class="content-wrapper">
+    <!-- Inicio do Header da pagina -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">DashBoard</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Starter Page</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- Inicio do Conteudo -->
+    <section class="content">
+        <div class="container-fluid">
+            <!-- Linha dos Cards -->
+            <div class="row">
+                <!-- Quantidades de pagamentos -->
+                <div class="col-lg-3">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h3>
+                                <font style="vertical-align: inherit">
+                                    <font style="vertical-align:inherit">150</font>
+                                </font>
+                                
+                            </h3>
+                            <p>
+                                <font style="vertical-align:inherit">
+                                    <font style="vertical-align:inherit"></font>Quantidades de pagamentos
+                                </font>
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="" class="small-box-footer">
+                            <font style="vertical-align:inherit">
+                                <font style="vertical-align:inherit">Mais informações</font>
+
+                            </font>
+                            <i class="right fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Total de Pagamentos -->
+                <div class="col-lg-3">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h3>
+                                <font style="vertical-align: inherit">
+                                    <font style="vertical-align:inherit">150</font>
+                                </font>
+
+                            </h3>
+                            <p>
+                                <font style="vertical-align:inherit">
+                                    <font style="vertical-align:inherit"></font>Valor Total de Pagamentos
+                                </font>
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="" class="small-box-footer">
+                            <font style="vertical-align:inherit">
+                                <font style="vertical-align:inherit">Mais informações</font>
+
+                            </font>
+                            <i class="right fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Pagamentos a vista -->
+                <div class="col-lg-3">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h3>
+                                <font style="vertical-align: inherit">
+                                    <font style="vertical-align:inherit">150</font>
+                                </font>
+
+                            </h3>
+                            <p>
+                                <font style="vertical-align:inherit">
+                                    <font style="vertical-align:inherit"></font>Pagamentos À vista
+                                </font>
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="" class="small-box-footer">
+                            <font style="vertical-align:inherit">
+                                <font style="vertical-align:inherit">Mais informações</font>
+
+                            </font>
+                            <i class="right fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Pagamentos a prazo -->
+                <div class="col-lg-3">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h3>
+                                <font style="vertical-align: inherit">
+                                    <font style="vertical-align:inherit">150</font>
+                                </font>
+
+                            </h3>
+                            <p>
+                                <font style="vertical-align:inherit">
+                                    <font style="vertical-align:inherit"></font>Pagamentos À Prazo
+                                </font>
+                            </p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-bag"></i>
+                        </div>
+                        <a href="" class="small-box-footer">
+                            <font style="vertical-align:inherit">
+                                <font style="vertical-align:inherit">Mais informações</font>
+
+                            </font>
+                            <i class="right fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Linha dos Graficos -->
+            <div class="row">
+                <section class="col-lg connectedSortable ui-sortable-handle">
+                    <!-- Custom tabs (Charts with tabs)-->
+                    <div class="card">
+                        <div class="card-header ui-sortable-handle" style="cursor: move;">
+                            <h3 class="card-title">
+                                <i class="fas fa-chart-pie mr-1"></i><font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">
+                                        Vendas
+                                    </font>
+                                </font>
+                            </h3>
+                            <div class="card-tools">
+                                <ul class="nav nav-pills ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#revenue-chart" data-toggle="tab"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Área</font></font></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sales-chart" data-toggle="tab"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Rosquinha</font></font></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!-- /.card-header -->
+                        <div class="card-body">
+                            <div class="tab-content p-0">
+                                <!-- Morris chart - Sales -->
+                                <div id="myfirstchart" style="height: 250px;"></div>
+                        </div><!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </section>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    new Morris.Line({
+        // ID of the element in which to draw the chart.
+        element: 'myfirstchart',
+        // Chart data records -- each entry in this array corresponds to a point on
+        // the chart.
+        data: [
+            { year: '2008', value: 20 },
+            { year: '2009', value: 10 },
+            { year: '2010', value: 5 },
+            { year: '2011', value: 5 },
+            { year: '2012', value: 20 }
+        ],
+        // The name of the data record attribute that contains x-values.
+        xkey: 'year',
+        // A list of names of data record attributes that contain y-values.
+        ykeys: ['value'],
+        // Labels for the ykeys -- will be displayed when you hover over the
+        // chart.
+        labels: ['Value']
+    });
+</script>
