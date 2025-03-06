@@ -5,6 +5,7 @@
     <NoWarn>$(NoWarn);NU1507</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <PackageVersion Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
     <PackageVersion Include="bootstrap" Version="5.3.3" />
     <PackageVersion Include="EntityFramework" Version="6.5.1" />
     <PackageVersion Include="Microsoft.Data.Sqlite" Version="9.0.2" />

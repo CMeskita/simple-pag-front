@@ -1,4 +1,5 @@
 ﻿using Dashboard.Models;
+using Dashboard.Models.Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Data.Conexao
@@ -11,7 +12,10 @@ namespace Data.Conexao
             
         }
         public virtual DbSet<Usuario> Usuarios { get; set; }
- 
-     
+        public virtual DbSet<FormaPagamento>FormaPagamentos{ get; set; }
+        public virtual DbSet<Finalizadora> Finalizadoras { get; set; }
+        public virtual DbSet<FinalizadoraPagamento> FinalizadoraPagamentos { get; set; }
+
+
     }
 }

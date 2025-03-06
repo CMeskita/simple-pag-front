@@ -3,6 +3,7 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="AspNetCoreHero.ToastNotification" />
     <PackageReference Include="bootstrap" />
     <PackageReference Include="EntityFramework" />
     <PackageReference Include="Microsoft.Data.Sqlite" />

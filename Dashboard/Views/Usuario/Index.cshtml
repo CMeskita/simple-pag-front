@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Dashboard.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+
+<div class="content-wrapper">
+    <!-- Inicio do Header da pagina -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark">Usuário</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active">Starter Page</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- Inicio do Conteudo -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg">
+                    <!-- Inicio do Card -->
+                    <div class="card card-info">
+                        <div class="card-header">
+                            <h5 class="m-0">Cadastro de Usuário</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md">
+                                    <!-- Inicio do Tabela -->
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Nome)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Email)
+                                                </th>
+
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Registro)
+                                                </th>
+                                               
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach (var item in Model)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Nome)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Email)
+                                                    </td>
+                         
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.Registro)
+                                                    </td>
+                                                 
+                                                    <td>
+                                                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  
