@@ -33,35 +33,46 @@
                         </div>
                         <div class="card-body">
                             <div class="row">
+                                <!-- PAGAMENTOS -->
                                 <div class="col-md-4">
-                                    <form asp-action="Create">
+                                    <form asp-action="Add">
                                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-                                        <div class="form-group">
+                                        <h1> <label id="total"></label></h1>
+                                        <div class="form-group ">
                                             <label asp-for="Valor" class="control-label"></label>
-                                            <input asp-for="Valor" type="number" class="form-control" />
-                                            <span asp-validation-for="Valor" class="text-danger"></span>
+                                            <div class="input-group-append">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="nav-icon fas fa-money-bill"></i></font></font></span>
+                                                </div>
+                                                <input asp-for="Valor" type="number" class="form-control" id="inputValor" oninput="atualizarLabel()" />
+                                                <span asp-validation-for="Valor" class="text-danger"></span>
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.00</font></font></span>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="form-group" data-select2-id="44">
-                                            <label asp-for="FormaPagamento" class="control-label"></label>
-                                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                                <option selected="selected" data-select2-id="3">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Cartão</font>
-                                                    </font>
-                                                </option>
-                                                <option data-select2-id="46">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Pix</font>
-                                                    </font>
-                                                </option>
+                                            <label asp-for="FormaPagamento" class="control-label" ></label>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="nav-icon fas fa-money-check"></i></font></font></span>
+                                                <select asp-for="FormaPagamento" id="formaPagamento" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true" onchange="atualizarModalidade()">
+                                                    <option selected="selected" data-select2-id="3">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;"></font>
+                                                        </font>
+                                                    </option>
+                                                        @foreach (var item in ViewBag.FormaPagamento)
+                                                        {
+                                                            <option value="@item.Id">
+                                                                <font style="vertical-align: inherit;">
+                                                                    <font style="vertical-align: inherit;"></font>
+                                                                </font>@item.Nome
+                                                            </option>
+                                                        }
 
-                                            </select>
-                                            <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="2" style="width: 100%;">
-                                                <span class="selection">
-
-                                                </span><span class="dropdown-wrapper" aria-hidden="true"></span>
-                                            </span>
+                                                </select>
+                                            </div>
+                                            <span asp-validation-for="FormaPagamento" class="text-danger"></span>
                                         </div>
                                         <div class="form-group">
                                             <label asp-for="QtdParcelas" class="control-label"></label>
@@ -70,29 +81,96 @@
                                         </div>
                                         <div class="form-group" data-select2-id="44">
                                             <label asp-for="Modalidade" class="control-label"></label>
-                                            <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
-                                                <option selected="selected" data-select2-id="3">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Crédito</font>
-                                                    </font>
-                                                </option>
-                                                <option data-select2-id="46">
-                                                    <font style="vertical-align: inherit;">
-                                                        <font style="vertical-align: inherit;">Débito</font>
-                                                    </font>
-                                                </option>
-
+                                            <select asp-for="Modalidade" id="modalidade" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                                @foreach (var item in ViewBag.Modalidade)
+                                                {
+                                                    <option value="@item">
+                                                        <font style="vertical-align: inherit;">
+                                                            <font style="vertical-align: inherit;"></font>
+                                                        </font>@item
+                                                    </option>
+                                                }
                                             </select>
-                                            <span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" data-select2-id="2" style="width: 100%;">
-                                                <span class="selection">
-
-                                                </span><span class="dropdown-wrapper" aria-hidden="true"></span>
-                                            </span>
+                                            <span asp-validation-for="Modalidade" class="text-danger"></span>
                                         </div>
                                         <div class="form-group">
-                                            <input type="submit" value="Create" class="btn btn-primary" />
+                                            <label asp-for="Vencimento" class="control-label"></label>
+                                            <input asp-for="Vencimento" type="date"  class="form-control" id="dataPagamento"  />
+                                            <span asp-validation-for="Vencimento" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" value="Pagar" class="btn btn-info" />
                                         </div>
                                     </form>
+                                </div>
+                                <!-- INFORMAÇÕES DO CARTÃO -->
+                                <div class="col-md-4">
+
+                                    <div class="card card-info">
+                                        <div class="card-header">
+                                            <h3 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Complemento de entrada</font></font></h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="image m-3">
+                                                <img src="~/adminlte/dist/img/credit/mastercard.png" class="elevation-2" alt="User Image">
+                                                <span> Dados do Cartão</span>
+                                            </div>
+                                            <label>Numero</label>
+                                            <div class="input-group mb-3">
+
+                                                <input type="number" class="form-control">
+                                                <div class="input-group-append">
+                                                </div>
+                                            </div>
+                                            <label>Vencimento</label>
+                                            <div class="input-group mb-3">
+
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> <i class="nav-icon fas fa-money-check"></i></font></font></span>
+                                                </div>
+                                                <input type="date" class="form-control">
+                                                <div class="input-group-append">
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                </div>
+                                                <input type="email" class="form-control" placeholder="E-mail">
+                                            </div>
+
+
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
+                                </div>
+                                <!-- GERAR QRCODE-->
+                                <div class="col-md-4">
+
+                                    <div class="card card-info">
+                                        <div class="card-header">
+                                            <h3 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gerar QR-Code</font></font></h3>
+                                        </div>
+                                        <div class="card-body">
+
+                                            <h1>Gerar QR Code</h1>
+                                            <span>Informe sua Chave</span>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" id="code">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-info" id="generateButton" onclick="generateQRCode()">Gerar</button>
+                                                </div>
+                                            </div>
+                                            <div id="qrcode"></div>
+                                            <div class="input-group-append m-3">
+                                                <button class="btn btn-info" id="ocultarButton" onclick="visualizarBotao()">Voltar</button>
+                                            </div>
+
+
+                                        </div>
+                                        <!-- /.card-body -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -100,10 +178,53 @@
                 </div>
             </div>
         </div>
+        <div>
+            <a asp-action="Index">Listar Pagamentos</a>
+        </div>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+<script>
+    function generateQRCode() {
+        var text = document.getElementById("code").value;
+        var width = 256;
+        var height = 256;
+        var colorDark = "#000000";
+        var colorLight = "#ffffff";
+        var correctLevel = QRCode.CorrectLevel.H;
+
+        new QRCode(document.getElementById("qrcode"), {
+            text: text,
+            width: width,
+            height: height,
+            colorDark: colorDark,
+            colorLight: colorLight,
+            correctLevel: correctLevel
+        });
+
+        var generateButton = document.getElementById("generateButton");
+        generateButton.disabled = true;
+    }
+
+    function visualizarBotao() {
+        var generateButton = document.getElementById("generateButton");
+        generateButton.disabled = false;
+        ocultarBotao();
+    }
+
+    function ocultarBotao() {
+        var qrcode = document.getElementById("qrcode");
+        qrcode.innerHTML = "";
+    }
+
+    function atualizarLabel() {
+        let valor = document.getElementById("inputValor").value;
+        document.getElementById("total").innerText = valor;
+    }
+
+</script>
+
 

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Dashboard.Models.Entity
@@ -10,15 +9,14 @@ namespace Dashboard.Models.Entity
         {
             
         }
-        public Finalizadora(decimal valor, int qtdParcelas, string modalidade, string vencimento)
+        public Finalizadora(decimal valor, int qtdParcelas, string modalidade, string vencimento,string formaPagamento)
         {
             Id = Guid.NewGuid().ToString().ToUpper();
             Valor = valor;
             QtdParcelas = qtdParcelas;
-            Modalidade = modalidade;
-            Vencimento = vencimento;
-
-
+            Modalidade = modalidade.ToUpper();
+            Vencimento = vencimento.ToString();
+            FormaPagamento= formaPagamento;
         }
 
         public string Id { get;protected set; }
@@ -27,6 +25,7 @@ namespace Dashboard.Models.Entity
         public int QtdParcelas { get; protected set; }
         public string Modalidade { get; protected set; }
         public string Vencimento { get; protected set; }
+        [Display(Name = "Pagamento")]
         public string FormaPagamento { get; protected set; }
 
 

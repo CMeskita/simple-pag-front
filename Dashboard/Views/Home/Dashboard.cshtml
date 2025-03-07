@@ -33,9 +33,9 @@
                 <div class="col-lg-3">
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>
+                            <h3 id="ValorCard-1">
                                 <font style="vertical-align: inherit">
-                                    <font style="vertical-align:inherit">150</font>
+                                    <font style="vertical-align:inherit"></font>
                                 </font>
                                 
                             </h3>
@@ -48,7 +48,7 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="" class="small-box-footer">
+                        <a href="/Finalizadora/index" class="small-box-footer">
                             <font style="vertical-align:inherit">
                                 <font style="vertical-align:inherit">Mais informações</font>
 
@@ -61,11 +61,10 @@
                 <div class="col-lg-3">
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>
+                            <h3 id="ValorCard-2">
                                 <font style="vertical-align: inherit">
-                                    <font style="vertical-align:inherit">150</font>
+                                    <font style="vertical-align:inherit"></font>
                                 </font>
-
                             </h3>
                             <p>
                                 <font style="vertical-align:inherit">
@@ -76,7 +75,7 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="" class="small-box-footer">
+                        <a href="/Finalizadora/index" class="small-box-footer">
                             <font style="vertical-align:inherit">
                                 <font style="vertical-align:inherit">Mais informações</font>
 
@@ -89,9 +88,9 @@
                 <div class="col-lg-3">
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>
+                            <h3 id="ValorCard-3">
                                 <font style="vertical-align: inherit">
-                                    <font style="vertical-align:inherit">150</font>
+                                    <font style="vertical-align:inherit"></font>
                                 </font>
 
                             </h3>
@@ -104,7 +103,7 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="" class="small-box-footer">
+                        <a href="/Finalizadora/index" class="small-box-footer">
                             <font style="vertical-align:inherit">
                                 <font style="vertical-align:inherit">Mais informações</font>
 
@@ -117,9 +116,9 @@
                 <div class="col-lg-3">
                     <div class="small-box bg-info">
                         <div class="inner">
-                            <h3>
+                            <h3 id="ValorCard-4">
                                 <font style="vertical-align: inherit">
-                                    <font style="vertical-align:inherit">150</font>
+                                    <font style="vertical-align:inherit"></font>
                                 </font>
 
                             </h3>
@@ -132,7 +131,7 @@
                         <div class="icon">
                             <i class="ion ion-bag"></i>
                         </div>
-                        <a href="" class="small-box-footer">
+                        <a href="/Finalizadora/index" class="small-box-footer">
                             <font style="vertical-align:inherit">
                                 <font style="vertical-align:inherit">Mais informações</font>
 
@@ -171,6 +170,7 @@
                                 <!-- Morris chart - Sales -->
                                 <div id="myfirstchart" style="height: 250px;"></div>
                         </div><!-- /.card-body -->
+                        </div>
                     </div>
                     <!-- /.card -->
                 </section>
@@ -179,6 +179,10 @@
     </section>
 </div>
 <script>
+    TotalQtdePagamentos();
+    TotalPagamentos();
+    TotalPagamentosAvista();
+    TotalPagamentosAPrazo();
     new Morris.Line({
         // ID of the element in which to draw the chart.
         element: 'myfirstchart',
@@ -199,4 +203,66 @@
         // chart.
         labels: ['Value']
     });
+
+    function TotalPagamentos() {
+        $.ajax({
+            method: 'get',
+            dataType: 'json',
+            url: '/Home/TotalPagamentos',
+            contentType: 'application/json',
+            success: function (valor) {
+                document.getElementById("ValorCard-2").innerText = parseFloat(valor).toFixed(2);
+               
+            },
+            error: function (err) {
+                console.log(err.responseText);
+            }
+        });
+    }
+    function TotalQtdePagamentos() {
+        $.ajax({
+            method: 'get',
+            dataType: 'json',
+            url: '/Home/TotalQtdePagamentos',
+            contentType: 'application/json',
+            success: function (valor) {
+                document.getElementById("ValorCard-1").innerText = valor;
+
+            },
+            error: function (err) {
+                console.log(err.responseText);
+            }
+        });
+    }
+    function TotalPagamentosAvista() {
+        $.ajax({
+            method: 'get',
+            dataType: 'json',
+                url: '/Home/TotalPagamentosAvista',
+            contentType: 'application/json',
+            success: function (valor) {
+                document.getElementById("ValorCard-3").innerText = parseFloat(valor).toFixed(2);
+               
+            },
+            error: function (err) {
+                console.log(err.responseText);
+            }
+        });
+    }
+    function TotalPagamentosAPrazo() {
+            $.ajax({
+                method: 'get',
+                dataType: 'json',
+                url: '/Home/TotalPagamentosAprazo',
+                contentType: 'application/json',
+                success: function (valor) {
+                    document.getElementById("ValorCard-4").innerText = parseFloat(valor).toFixed(2);
+
+                },
+                error: function (err) {
+                    console.log(err.responseText);
+                }
+            });
+        }
+    
 </script>

@@ -11,6 +11,7 @@ namespace Dashboard.Models.Interface
         IList<Usuario> GetAllUsuarios();
         Task<Usuario> FindUsuarioById(string id);
         Task InativarUsuario(string id);
-        Task UpdateAsync(DtoUsuario dados);
+        Task UpdateAsync(Usuario dados);
+
     }
 }

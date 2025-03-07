@@ -30,6 +30,7 @@ namespace Dashboard
             services.AddMvc();//
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddScoped<IPagamentoRepositorio, PagamentoRepositorio>();
+            services.AddScoped<IFinalizadoraRepositorio, FinalizadoraRepositorio>();
 
             //services.AddNotyf(config =>
             //{

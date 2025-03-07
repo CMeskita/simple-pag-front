@@ -16,6 +16,17 @@ namespace Dashboard.Models
             Registro = DateTime.UtcNow.ToString("dd-MM-yyyy");
             Status = true;
         }
+        public Usuario(string id,string nome, string email,string chavePrivada)
+        {
+            Id = id;
+            Nome = nome;
+            Email = email;
+        }
+        public void setUsuario(string nome,string email) 
+        {
+            Nome = nome;
+            Email = email;
+        }
         public void Inativar() 
         {
             Status = false;

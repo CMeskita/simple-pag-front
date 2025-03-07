@@ -1,8 +1,6 @@
-﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using Dashboard.Models;
+﻿using Dashboard.Models;
 using Dashboard.Models.Dto;
 using Dashboard.Models.Interface;
-using Data.Conexao;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -21,7 +19,15 @@ namespace Dashboard.Controllers
         public IActionResult Index()
         {
             IList<Usuario> response = _usuarioRepositorio.GetAllUsuarios();
-            return View(response);
+            List<Usuario>usuario=new List<Usuario>();
+            foreach (var item in response)
+            {
+                if (item.Status==true)
+                {
+                    usuario.Add(item);
+                }
+            }
+            return View(usuario);
         }
 
 
@@ -37,18 +43,27 @@ namespace Dashboard.Controllers
 
             return View();
         }
-        [HttpPost]
-        public IActionResult Add(DtoUsuario dto)
+   
+        public IActionResult Add(DtoUsuario usuario)
         {
-          
-           var  result=_usuarioRepositorio.ExisteUsuario(dto.Email);
+            if (!ModelState.IsValid) {
+                var result = _usuarioRepositorio.ExisteUsuario(usuario.Email);
 
-            if (result==false)
-            {
-                _usuarioRepositorio.AddUsuario(dto);
-                ModelState.Clear();
+                if (result == false)
+                {
+                    _usuarioRepositorio.AddUsuario(usuario);
+                    ModelState.Clear();
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return RedirectToAction("Create", "Usuario", new { result });
+
+                }
+                
             }
-            return RedirectToAction("Create", "Usuario", new { result });
+            return View("Create", usuario);
+
         }
         public IActionResult Edit(string id)
         {
@@ -56,10 +71,16 @@ namespace Dashboard.Controllers
             return View(response);
 
         }
-        public IActionResult EditUsuario(DtoUsuario dto)
+        public IActionResult EditUsuario(DtoUsuarioUpdate usuario)
         {
-            var response = _usuarioRepositorio.UpdateAsync(dto);
+            var response = _usuarioRepositorio.UpdateAsync(usuario);
 
+            return RedirectToAction("Index", "Usuario");
+
+        }
+        public IActionResult Inativar(string id)
+        {
+            var response = _usuarioRepositorio.InativarUsuario(id);
             return RedirectToAction("Index", "Usuario");
 
         }

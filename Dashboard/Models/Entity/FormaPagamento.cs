@@ -5,7 +5,7 @@ namespace Dashboard.Models.Entity
 {
     public class FormaPagamento
     {
-        public FormaPagamento(string nome, string sigla,int codFinalizadora)
+        public FormaPagamento(string nome, string sigla,int codFinalizadora,bool modalidade)
         {
             Id = Guid.NewGuid().ToString().ToUpper();
             Nome = nome.Trim().ToUpper();
@@ -13,6 +13,7 @@ namespace Dashboard.Models.Entity
             CodFinalizadora = codFinalizadora;
             Status = true;
             Registro = DateTime.UtcNow.ToString("dd-MM-yyyy");
+            Modalidade = modalidade;
            
         }
 
@@ -29,7 +30,8 @@ namespace Dashboard.Models.Entity
         [Required(ErrorMessage = "O campo Codigo Finalizadora é obrigatório.")]
         public string  Sigla { get; protected set; }
         public bool Status { get; protected set; }
+        public bool Modalidade { get; protected set; }
 
-        
+
     }
 }

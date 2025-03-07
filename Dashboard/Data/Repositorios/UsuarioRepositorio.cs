@@ -35,6 +35,7 @@ namespace Dashboard.Data.Repositorios
         }
         public  IList<Usuario>GetAllUsuarios()
         {
+
             return _context.Usuarios.ToList();
             
         }
@@ -42,29 +43,29 @@ namespace Dashboard.Data.Repositorios
         {
             return await _context.Usuarios.FindAsync(id);
         }
-        public async Task UpdateAsync(DtoUsuario dados)
+        public async Task UpdateAsync(Usuario dados)
         {
-
-            //await _context.Database.ExecuteSqlRawAsync($@"Update FROM itemdopedido WHERE pedidoid ='{pedido}'");
-
-            //_context.Entry(dados).State = (Microsoft.EntityFrameworkCore.EntityState)System.Data.Entity.EntityState.Added;
-            //await _context.AddRangeAsync();
-            //_context.Usuarios.Update(dados);
-
-            //await _context.SaveChangesAsync();
+            Usuario usuarios=  _context.Usuarios.Where(x => x.Id == dados.Id).FirstOrDefault();
+            if (usuarios != null)
+            {
+                usuarios.setUsuario(dados.Nome,dados.Email);
+            }
+            _context.Usuarios.Update(usuarios);
+            await _context.SaveChangesAsync();
 
         }
         public async Task InativarUsuario(string id)
         {
             var dados = _context.Usuarios.Where(x => x.Id == id).FirstOrDefault();
-            if (dados == null)
+            if (dados != null)
             {
-                throw new Exception("Usuário não encontrado");
-            }
-            dados.Inativar();
+                dados.Inativar();
 
-            _context.Usuarios.Attach(dados).Property(x => x.Status).IsModified = true;
-            await _context.SaveChangesAsync();
+                _context.Usuarios.Attach(dados).Property(x => x.Status).IsModified = true;
+                await _context.SaveChangesAsync();
+
+            }
+            
         }
     }
 }

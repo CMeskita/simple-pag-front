@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Dashboard.Models;
+using Dashboard.Models.Interface;
 
 namespace Dashboard.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IFinalizadoraRepositorio _finalizadoraRepositorio;
+        public HomeController(ILogger<HomeController> logger, IFinalizadoraRepositorio finalizadoraRepositorio)
         {
             _logger = logger;
+            _finalizadoraRepositorio = finalizadoraRepositorio;
         }
 
         public IActionResult Index()
@@ -36,6 +38,30 @@ namespace Dashboard.Controllers
         public IActionResult Dashboard()
         {
             return View();
+        }
+        [HttpGet]
+        public decimal TotalPagamentos()
+        {
+            var result = _finalizadoraRepositorio.TotalPagamentos();
+            return result;
+        }
+        [HttpGet]
+        public decimal TotalQtdePagamentos()
+        {
+            var result = _finalizadoraRepositorio.TotalQtdePagamentos();
+            return result;
+        }
+        [HttpGet]
+        public decimal TotalPagamentosAvista()
+        {
+            var result = _finalizadoraRepositorio.TotalPagamentosAvista();
+            return result;
+        }
+        [HttpGet]
+        public decimal TotalPagamentosAprazo()
+        {
+            var result = _finalizadoraRepositorio.TotalPagamentosAPrazo();
+            return result;
         }
     }
 }

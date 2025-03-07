@@ -8,10 +8,11 @@ namespace Dashboard.Models.Dto
   
         public int CodFinalizadora { get;  set; }
         public string Sigla { get;  set; }
-        
+        public bool Modalidade { get;  set; }
+
 
         public static implicit operator FormaPagamento(DtoFormaPagamento dto)
-      => new FormaPagamento(dto.Nome, dto.Sigla, dto.CodFinalizadora);
+      => new FormaPagamento(dto.Nome, dto.Sigla, dto.CodFinalizadora,dto.Modalidade);
 
 
     }

@@ -1,7 +1,8 @@
-﻿using Dashboard.Data.Repositorios;
-using Dashboard.Models.Dto;
+﻿using Dashboard.Models.Dto;
+using Dashboard.Models.Entity;
 using Dashboard.Models.Interface;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Dashboard.Controllers
 {
@@ -13,10 +14,18 @@ namespace Dashboard.Controllers
         {
             _pagamentoRepositorio = pagamentoRepositorio;
         }
-
         public IActionResult Index()
         {
-            return View();
+            IList<FormaPagamento> response = _pagamentoRepositorio.GetAllPagamentos();
+            List<FormaPagamento> pagamentos = new List<FormaPagamento>();
+            foreach (var item in response)
+            {
+                if (item.Status == true)
+                {
+                    pagamentos.Add(item);
+                }
+            }
+            return View(pagamentos);
         }
         public IActionResult Create(bool result)
         {
@@ -27,15 +36,20 @@ namespace Dashboard.Controllers
             }
             return View();
         }
-        public IActionResult Add(DtoFormaPagamento dto)
+        public IActionResult Add(DtoFormaPagamento pagamento)
         {
-            var result = _pagamentoRepositorio.ExistePagamento(dto.Sigla);
-            if (result == false)
+            if (ModelState.IsValid)
             {
-                _pagamentoRepositorio.AddPagamento(dto);
-                ModelState.Clear();
+                var result = _pagamentoRepositorio.ExistePagamento(pagamento.Sigla);
+                if (result == false)
+                {
+                    _pagamentoRepositorio.AddPagamento(pagamento);
+                    ModelState.Clear();
+                }
+                return RedirectToAction("Index");
             }
-            return RedirectToAction("Create", "Pagamentos", new {result});
+            return View("Create", pagamento);
+
         }
 
     }

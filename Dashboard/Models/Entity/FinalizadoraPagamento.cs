@@ -8,14 +8,15 @@ namespace Dashboard.Models.Entity
         {
             
         }
-        public FinalizadoraPagamento(string finalizadoraId, string formaPagamentoId, StatusPagamento statusPagamento, string registro,string sigla)
+        public FinalizadoraPagamento(string finalizadoraId, string formaPagamentoId, string statusPagamento, string modalidade, string sigla)
         {
             Id = Guid.NewGuid().ToString().ToUpper();
             FinalizadoraId = finalizadoraId;
             FormaPagamentoId = formaPagamentoId;
             Sigla = sigla.ToUpper();
             StatusPagamento = statusPagamento;
-            Registro = registro;
+            Registro = DateTime.UtcNow.ToString("dd-MM-yyyy");
+            Modalidade = modalidade;
         }
 
         public string Id { get; protected set; }
@@ -24,26 +25,11 @@ namespace Dashboard.Models.Entity
         public string Sigla { get; protected set; }
         public string Modalidade { get; protected set; }
         public string Registro { get; protected set; }
-        public StatusPagamento StatusPagamento { get; protected set; }
+        public string StatusPagamento { get; protected set; }
 
 
 
-        public void AtualizarStatusPagamento(DateTime dataPagamento)
-        {
-            if (dataPagamento <= DateTime.Now)
-            {
-                StatusPagamento = StatusPagamento.PAGO;
-            }
-            else
-            {
-                StatusPagamento = StatusPagamento.PENDENTE;
-            }
-        }
 
     }
-    public enum StatusPagamento
-    {
-        PAGO,
-        PENDENTE
-    }
+    
 }

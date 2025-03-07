@@ -1,10 +1,8 @@
-﻿@model IEnumerable<Dashboard.Models.Usuario>
+﻿@model IEnumerable<Dashboard.Models.Entity.Finalizadora>
 
 @{
     ViewData["Title"] = "Index";
 }
-
-
 
 
 <div class="content-wrapper">
@@ -42,16 +40,20 @@
                                         <thead>
                                             <tr>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.Nome)
+                                                    @Html.DisplayNameFor(model => model.Valor)
                                                 </th>
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.Email)
+                                                    @Html.DisplayNameFor(model => model.QtdParcelas)
                                                 </th>
-
                                                 <th>
-                                                    @Html.DisplayNameFor(model => model.Registro)
+                                                    @Html.DisplayNameFor(model => model.Modalidade)
                                                 </th>
-                                               
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.Vencimento)
+                                                </th>
+                                                <th>
+                                                    @Html.DisplayNameFor(model => model.FormaPagamento)
+                                                </th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -60,20 +62,24 @@
                                             {
                                                 <tr>
                                                     <td>
-                                                        @Html.DisplayFor(modelItem => item.Nome)
+                                                        @Html.DisplayFor(modelItem => item.Valor)
                                                     </td>
                                                     <td>
-                                                        @Html.DisplayFor(modelItem => item.Email)
+                                                        @Html.DisplayFor(modelItem => item.QtdParcelas)
                                                     </td>
-                         
                                                     <td>
-                                                        @Html.DisplayFor(modelItem => item.Registro)
+                                                        @Html.DisplayFor(modelItem => item.Modalidade)
                                                     </td>
-                                                 
                                                     <td>
-                                                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                                        @Html.DisplayFor(modelItem => item.Vencimento)
+                                                    </td>
+                                                    <td>
+                                                        @Html.DisplayFor(modelItem => item.FormaPagamento)
+                                                    </td>
+                                                    <td>
+                                                       
                                                         <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                                        <a asp-action="Inativar" asp-route-id="@item.Id">Delete</a>
+                                                      
                                                     </td>
                                                 </tr>
                                             }
@@ -81,13 +87,16 @@
                                     </table>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
             </div>
+
         </div>
+
     </div>
-</div>
 
 
-  
