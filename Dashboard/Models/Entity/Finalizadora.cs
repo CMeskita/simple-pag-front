@@ -7,19 +7,20 @@ namespace Dashboard.Models.Entity
     {
         public Finalizadora()
         {
-            
+
         }
-        public Finalizadora(decimal valor, int qtdParcelas, string modalidade, string vencimento,string formaPagamento)
+        public Finalizadora(decimal valor, int qtdParcelas, string modalidade, string vencimento, string formaPagamento)
         {
             Id = Guid.NewGuid().ToString().ToUpper();
             Valor = valor;
             QtdParcelas = qtdParcelas;
             Modalidade = modalidade.ToUpper();
             Vencimento = vencimento.ToString();
-            FormaPagamento= formaPagamento;
+            FormaPagamento = formaPagamento;
         }
 
-        public string Id { get;protected set; }
+        public string Id { get; protected set; }
+        [RegularExpression("^[0-9]*$", ErrorMessage = "Somente números são permitidos.")]
         public decimal Valor { get; protected set; }
         [Display(Name = "Parcelas")]
         public int QtdParcelas { get; protected set; }
@@ -28,8 +29,7 @@ namespace Dashboard.Models.Entity
         [Display(Name = "Pagamento")]
         public string FormaPagamento { get; protected set; }
 
-
-
+     
     }
    
 

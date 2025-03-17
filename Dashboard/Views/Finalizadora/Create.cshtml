@@ -44,7 +44,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="nav-icon fas fa-money-bill"></i></font></font></span>
                                                 </div>
-                                                <input asp-for="Valor" type="number" class="form-control" id="inputValor" oninput="atualizarLabel()" />
+                                                <input asp-for="Valor" type="text" class="form-control" id="inputValor" oninput="atualizarLabel()" />
                                                 <span asp-validation-for="Valor" class="text-danger"></span>
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.00</font></font></span>
@@ -52,7 +52,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group" data-select2-id="44">
-                                            <label asp-for="FormaPagamento" class="control-label" ></label>
+                                            <label asp-for="FormaPagamento" class="control-label"></label>
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><i class="nav-icon fas fa-money-check"></i></font></font></span>
                                                 <select asp-for="FormaPagamento" id="formaPagamento" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true" onchange="atualizarModalidade()">
@@ -61,14 +61,14 @@
                                                             <font style="vertical-align: inherit;"></font>
                                                         </font>
                                                     </option>
-                                                        @foreach (var item in ViewBag.FormaPagamento)
-                                                        {
-                                                            <option value="@item.Id">
-                                                                <font style="vertical-align: inherit;">
-                                                                    <font style="vertical-align: inherit;"></font>
-                                                                </font>@item.Nome
-                                                            </option>
-                                                        }
+                                                    @foreach (var item in ViewBag.FormaPagamento)
+                                                    {
+                                                        <option value="@item.Id">
+                                                            <font style="vertical-align: inherit;">
+                                                                <font style="vertical-align: inherit;"></font>
+                                                            </font>@item.Nome
+                                                        </option>
+                                                    }
 
                                                 </select>
                                             </div>
@@ -76,7 +76,7 @@
                                         </div>
                                         <div class="form-group">
                                             <label asp-for="QtdParcelas" class="control-label"></label>
-                                            <input asp-for="QtdParcelas" class="form-control" />
+                                            <input asp-for="QtdParcelas" class="form-control" oninput="atualizarVencimento()" />
                                             <span asp-validation-for="QtdParcelas" class="text-danger"></span>
                                         </div>
                                         <div class="form-group" data-select2-id="44">
@@ -95,8 +95,9 @@
                                         </div>
                                         <div class="form-group">
                                             <label asp-for="Vencimento" class="control-label"></label>
-                                            <input asp-for="Vencimento" type="date"  class="form-control" id="dataPagamento"  />
+                                            <input asp-for="Vencimento" type="date" class="form-control" id="dataPagamento" />
                                             <span asp-validation-for="Vencimento" class="text-danger"></span>
+
                                         </div>
                                         <div class="form-group">
                                             <input type="submit" value="Pagar" class="btn btn-info" />
@@ -188,6 +189,7 @@
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
 <script>
+    
     function generateQRCode() {
         var text = document.getElementById("code").value;
         var width = 256;
@@ -224,6 +226,33 @@
         let valor = document.getElementById("inputValor").value;
         document.getElementById("total").innerText = valor;
     }
+
+    function calcularVencimento(parcelas) {
+        const dataAtual = new Date();
+        const mesAtual = dataAtual.getMonth(); // Mês atual (0-11)
+        const anoAtual = dataAtual.getFullYear(); // Ano atual
+        const dia = dataAtual.getDate();
+
+        // console.log(dataAtual);
+       
+        const parcelasNumericas = Number(parcelas);
+        const mesesTotais = mesAtual + parcelasNumericas;
+
+        // Calcular o ano e o mês de vencimento
+        const mesVencimento = mesesTotais % 12; // Módulo 12 para o mês correto
+        const anoVencimento = anoAtual + Math.floor(mesesTotais / 12); // Adicionar os anos se necessário
+
+        // Definir a data de vencimento
+        const vencimento = new Date(anoVencimento, mesVencimento, dia); // Definir o primeiro dia do mês
+        return vencimento;
+    }
+
+    function atualizarVencimento() {
+        const parcelas = document.getElementById("QtdParcelas").value;
+        const vencimento = calcularVencimento(parcelas);
+        document.getElementById("dataPagamento").value = vencimento.toISOString().split('T')[0];
+    }
+   
 
 </script>
 

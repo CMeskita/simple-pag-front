@@ -1,4 +1,5 @@
 ﻿using Dashboard.Models.Entity;
+using Microsoft.AspNetCore.Http;
 using System;
 
 
@@ -12,7 +13,16 @@ namespace Dashboard.Models.Dto
         public string Vencimento { get;  set; }
         public string FormaPagamento { get; set; }
 
+        public bool ValidarVencimento()
+        {
+            string dataAtual = DateTime.UtcNow.ToString("dd-MM-yyyy");
+            string vencimento = DateTime.Parse(Vencimento).ToString("dd-MM-yyyy");
 
+            DateTime dataAT = DateTime.Parse(dataAtual);
+            DateTime dataVC = DateTime.Parse(vencimento);
+           
+            return dataVC >= dataAT;
+        }
 
         public static implicit operator Finalizadora(DtoFinalizadora dto)
        => new Finalizadora(dto.Valor, dto.QtdParcelas, dto.Modalidade,dto.Vencimento,dto.FormaPagamento);

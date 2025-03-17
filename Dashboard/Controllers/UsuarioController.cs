@@ -19,6 +19,10 @@ namespace Dashboard.Controllers
         public IActionResult Index()
         {
             IList<Usuario> response = _usuarioRepositorio.GetAllUsuarios();
+            if (response == null)
+            {
+                return RedirectToAction("Create");
+            }
             List<Usuario>usuario=new List<Usuario>();
             foreach (var item in response)
             {

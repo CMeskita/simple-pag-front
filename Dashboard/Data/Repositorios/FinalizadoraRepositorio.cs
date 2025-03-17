@@ -62,12 +62,12 @@ namespace Dashboard.Data.Repositorios
         }
         public decimal TotalPagamentosAvista()
         {
-            var result = _context.Finalizadoras.Where(x => x.QtdParcelas == 1).Sum(x=>x.Valor);
+            var result = _context.Finalizadoras.Where(x => x.QtdParcelas < 1).Sum(x=>x.Valor);
             return result;
         }
         public decimal TotalPagamentosAPrazo()
         {
-            var result = _context.Finalizadoras.Where(x => x.QtdParcelas > 1).Sum(x => x.Valor); 
+            var result = _context.Finalizadoras.Where(x => x.QtdParcelas >= 1).Sum(x => x.Valor); 
             return result;
         }
         public async Task AddFinalizadoraPagamento(FinalizadoraPagamento dados)
