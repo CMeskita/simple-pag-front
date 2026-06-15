@@ -1,0 +1,143 @@
+﻿@{
+    ViewData["Title"] = "Dashboard Helpdesk";
+}
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2 align-items-center">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark"><i class="fas fa-chart-line mr-2"></i>Dashboard de Atendimentos</h1>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+
+            <div class="row">
+
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-danger">
+                        <div class="inner">
+                            <h3 id="CardChamadosAbertos">0</h3>
+                            <p>Chamados em Aberto</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-folder-open"></i>
+                        </div>
+                        <a asp-controller="Atendimento" asp-action="Index" asp-route-status="Aberto" class="small-box-footer">
+                            Ver fila de espera <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-warning">
+                        <div class="inner">
+                            <h3 id="CardEmAtendimento">0</h3>
+                            <p>Em Atendimento</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <a asp-controller="Atendimento" asp-action="Index" asp-route-status="Progresso" class="small-box-footer">
+                            Ver em andamento <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-success">
+                        <div class="inner">
+                            <h3 id="CardResolvidosHoje">0</h3>
+                            <p>Resolvidos (Este Mês)</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-check-double"></i>
+                        </div>
+                        <a asp-controller="Atendimento" asp-action="Index" asp-route-status="Resolvido" class="small-box-footer">
+                            Ver histórico <i class="fas fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-6">
+                    <div class="small-box bg-info">
+                        <div class="inner">
+                            <h3 id="CardTaxaSla">0%</h3>
+                            <p>Dentro do SLA</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">
+                            Métrica de Qualidade <i class="fas fa-info-circle"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card card-outline card-info">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <i class="fas fa-chart-area mr-1"></i>
+                                Desempenho Mensal de Chamados (2026)
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <div id="graficoChamados" style="height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Executa as chamadas Ajax assim que a página carrega
+        CarregarCardsDashboard();
+        CarregarDadosGrafico();
+    });
+
+    function CarregarCardsDashboard() {
+        // Chamada única ou separada para buscar os indicadores do Helpdesk
+        $.getJSON('/Home/ObterMetricasHelpdesk', function (dados) {
+            $('#CardChamadosAbertos').text(dados.abertos);
+            $('#CardEmAtendimento').text(dados.emAndamento);
+            $('#CardResolvidosHoje').text(dados.resolvidos);
+            $('#CardTaxaSla').text(dados.taxaSla + '%');
+        }).fail(function (err) {
+            console.error("Erro ao carregar indicadores:", err.responseText);
+        });
+    }
+
+    function CarregarDadosGrafico() {
+        $.getJSON('/Home/ObterDadosGraficoMensal', function (dadosDoBanco) {
+            new Morris.Area({
+                element: 'graficoChamados',
+                data: dadosDoBanco,
+                xkey: 'mes',
+                ykeys: ['criados', 'resolvidos'],
+                labels: ['Chamados Criados', 'Chamados Resolvidos'],
+                lineColors: ['#dc3545', '#28a745'], // Vermelho para criados, Verde para resolvidos
+                hideHover: 'auto',
+                parseTime: false,
+                resize: true
+            });
+        });
+    }
+</script>

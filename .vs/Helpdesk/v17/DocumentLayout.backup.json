@@ -1,0 +1,790 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DotNet\\Helpdesk\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\cliente\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\usuario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\usuario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\data\\repositorios\\clienterespositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\data\\repositorios\\clienterespositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\dto\\clienteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\dto\\clienteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\entity\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\entity\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\cliente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\data\\conexao\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\data\\conexao\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\usuario\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\usuario\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\data\\repositorios\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\data\\repositorios\\usuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\dto\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\dto\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\interface\\iclienterespositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\interface\\iclienterespositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\shared\\_sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\entity\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\entity\\suporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\entity\\suporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\entity\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\entity\\perfil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\dto\\drosuporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\dto\\drosuporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\dto\\dtoauditoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\dto\\dtoauditoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\dto\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\dto\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\interface\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\interface\\iusuariorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\controllers\\suportecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\controllers\\suportecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\entity\\auditoriasuporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\entity\\auditoriasuporte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\entity\\atendimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\entity\\atendimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\entity\\arquivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\entity\\arquivos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\data\\repositorios\\suporterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\data\\repositorios\\suporterepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\suporte\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\suporte\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\suporte\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\suporte\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\util\\geradorcodigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\util\\geradorcodigos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\entity\\setor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\entity\\setor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\util\\enumusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\util\\enumusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\models\\util\\enuns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\models\\util\\enuns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\helpdesk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\helpdesk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|d:\\dotnet\\helpdesk\\helpdesk\\migrations\\20260614160638_nomedamigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B28B1895-D35F-4018-B974-46AAFA86C843}|Helpdesk\\Helpdesk.csproj|solutionrelative:helpdesk\\migrations\\20260614160638_nomedamigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T00:08:50.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteViewModel.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\ClienteViewModel.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Dto\\ClienteViewModel.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\ClienteViewModel.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Dto\\ClienteViewModel.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAswCAAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T00:24:07.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Cliente.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Entity\\Cliente.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Cliente.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Entity\\Cliente.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:03:29.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClienteRespositorio.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Data\\Repositorios\\ClienteRespositorio.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Data\\Repositorios\\ClienteRespositorio.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Data\\Repositorios\\ClienteRespositorio.cs",
+              "RelativeToolTip": "Helpdesk\\Data\\Repositorios\\ClienteRespositorio.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA8wCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T00:15:17.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Context.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Data\\Conexao\\Context.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Data\\Conexao\\Context.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Data\\Conexao\\Context.cs",
+              "RelativeToolTip": "Helpdesk\\Data\\Conexao\\Context.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:07:29.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Cliente\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Cliente\\Edit.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Cliente\\Edit.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Cliente\\Edit.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEUAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T01:23:24.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Cliente\\Index.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Cliente\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T01:02:00.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Controllers\\UsuarioController.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "Helpdesk\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwB0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:03:01.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Cliente\\Create.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Cliente\\Create.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Cliente\\Create.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Cliente\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T15:43:31.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Usuario\\Create.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Usuario\\Create.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Usuario\\Create.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Usuario\\Create.cshtml",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T16:14:25.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-15T00:08:40.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Controllers\\ClienteController.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Helpdesk\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwE0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T00:26:18.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Startup.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Startup.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Startup.cs",
+              "RelativeToolTip": "Helpdesk\\Startup.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAYwB4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T21:42:53.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Usuario\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Usuario\\Edit.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Usuario\\Edit.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Usuario\\Edit.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACkAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T19:19:24.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IClienteRespositorio.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Interface\\IClienteRespositorio.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Interface\\IClienteRespositorio.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Interface\\IClienteRespositorio.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Interface\\IClienteRespositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T00:17:48.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Dto\\UsuarioViewModel.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\UsuarioViewModel.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Dto\\UsuarioViewModel.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:02:19.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UsuarioRepositorio.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Data\\Repositorios\\UsuarioRepositorio.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Data\\Repositorios\\UsuarioRepositorio.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Data\\Repositorios\\UsuarioRepositorio.cs",
+              "RelativeToolTip": "Helpdesk\\Data\\Repositorios\\UsuarioRepositorio.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAswD8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:04:07.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Sidebar.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Shared\\_Sidebar.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Shared\\_Sidebar.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Shared\\_Sidebar.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T18:08:33.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Usuario\\Index.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Usuario\\Index.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Usuario\\Index.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Usuario\\Index.cshtml",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAqwFQAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T19:26:19.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Usuario.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Entity\\Usuario.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Usuario.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Entity\\Usuario.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAA2wDoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:03:51.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Suporte.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Suporte.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Entity\\Suporte.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Suporte.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Entity\\Suporte.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:03:42.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Perfil.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Perfil.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Entity\\Perfil.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Perfil.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Entity\\Perfil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:31:21.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Dto\\LoginViewModel.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\LoginViewModel.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Dto\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:02:14.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DroSuporte.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\DroSuporte.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Dto\\DroSuporte.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\DroSuporte.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Dto\\DroSuporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T00:59:02.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IUsuarioRepositorio.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Interface\\IUsuarioRepositorio.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Interface\\IUsuarioRepositorio.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Interface\\IUsuarioRepositorio.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Interface\\IUsuarioRepositorio.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAASwA8AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:54:03.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DtoAuditoria.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\DtoAuditoria.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Dto\\DtoAuditoria.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Dto\\DtoAuditoria.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Dto\\DtoAuditoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T00:25:37.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AuditoriaSuporte.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\AuditoriaSuporte.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Entity\\AuditoriaSuporte.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\AuditoriaSuporte.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Entity\\AuditoriaSuporte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:03:27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SuporteController.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\SuporteController.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Controllers\\SuporteController.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\SuporteController.cs",
+              "RelativeToolTip": "Helpdesk\\Controllers\\SuporteController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-15T00:27:31.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Atendimento.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Atendimento.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Entity\\Atendimento.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Atendimento.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Entity\\Atendimento.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwDUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T15:44:19.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Arquivos.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Arquivos.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Entity\\Arquivos.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Arquivos.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Entity\\Arquivos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:03:17.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Helpdesk\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T22:09:14.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Suporte\\Index.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Suporte\\Index.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Suporte\\Index.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Suporte\\Index.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T23:48:36.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SuporteRepositorio.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Data\\Repositorios\\SuporteRepositorio.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Data\\Repositorios\\SuporteRepositorio.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Data\\Repositorios\\SuporteRepositorio.cs",
+              "RelativeToolTip": "Helpdesk\\Data\\Repositorios\\SuporteRepositorio.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T15:40:46.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Helpdesk\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAEQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T20:07:03.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Login\\Login.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T20:21:05.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_Navbar.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Shared\\_Navbar.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Shared\\_Navbar.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Shared\\_Navbar.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Shared\\_Navbar.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T22:09:24.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Suporte\\Create.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Suporte\\Create.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Suporte\\Create.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Suporte\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T15:40:41.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Program.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Program.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Program.cs",
+              "RelativeToolTip": "Helpdesk\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T21:44:08.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Helpdesk\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Helpdesk\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-14T22:08:54.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "GeradorCodigos.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Util\\GeradorCodigos.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Util\\GeradorCodigos.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Util\\GeradorCodigos.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Util\\GeradorCodigos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:34:12.594Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Setor.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Setor.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Entity\\Setor.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Entity\\Setor.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Entity\\Setor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:31:13.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EnumUsuario.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Util\\EnumUsuario.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Util\\EnumUsuario.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Util\\EnumUsuario.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Util\\EnumUsuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:21:24.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Enuns.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Util\\Enuns.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Models\\Util\\Enuns.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Models\\Util\\Enuns.cs",
+              "RelativeToolTip": "Helpdesk\\Models\\Util\\Enuns.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:20:51.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\appsettings.json",
+              "RelativeDocumentMoniker": "Helpdesk\\appsettings.json",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\appsettings.json",
+              "RelativeToolTip": "Helpdesk\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-14T16:05:08.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20260614160638_NomeDaMigration.cs",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Migrations\\20260614160638_NomeDaMigration.cs",
+              "RelativeDocumentMoniker": "Helpdesk\\Migrations\\20260614160638_NomeDaMigration.cs",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Migrations\\20260614160638_NomeDaMigration.cs",
+              "RelativeToolTip": "Helpdesk\\Migrations\\20260614160638_NomeDaMigration.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T16:06:39.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Helpdesk.csproj",
+              "DocumentMoniker": "D:\\DotNet\\Helpdesk\\Helpdesk\\Helpdesk.csproj",
+              "RelativeDocumentMoniker": "Helpdesk\\Helpdesk.csproj",
+              "ToolTip": "D:\\DotNet\\Helpdesk\\Helpdesk\\Helpdesk.csproj",
+              "RelativeToolTip": "Helpdesk\\Helpdesk.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-14T16:08:36.727Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

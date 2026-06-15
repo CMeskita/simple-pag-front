@@ -1,0 +1,96 @@
+﻿@model Helpdesk.Models.Entity.Atendimento
+
+@{
+    ViewData["Title"] = "Resolver Chamado #" + Model.Id;
+}
+
+<div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark"><i class="fas fa-check-circle text-success mr-2"></i>Solucionar Chamado #@Model.Id</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-5">
+                    <div class="card card-outline card-secondary">
+                        <div class="card-header">
+                            <h3 class="card-title"><i class="fas fa-info-circle mr-1"></i> Detalhes do Incidente</h3>
+                        </div>
+                        <div class="card-body">
+                            <strong><i class="fas fa-heading mr-1"></i> Assunto</strong>
+                            <p class="text-muted">@Model.Titulo</p>
+                            <hr>
+                            <strong><i class="fas fa-tags mr-1"></i> Categoria / Prioridade</strong>
+                            <p class="text-muted">
+                                <span class="badge badge-info">@Model.Categoria</span>
+                                <span class="badge badge-danger">@Model.Prioridade</span>
+                            </p>
+                            <hr>
+                            <strong><i class="fas fa-file-alt mr-1"></i> Descrição do Usuário</strong>
+                            <p class="text-muted">@Model.Descricao</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="card card-outline card-success">
+                        <div class="card-header">
+                            <h3 class="card-title"><i class="fas fa-lightbulb mr-1"></i> Registrar Solução Técnica</h3>
+                        </div>
+
+                        <form asp-action="SalvarSolucao">
+                            <input type="hidden" asp-for="Id" />
+
+                            <div class="card-body">
+                                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                                <div class="form-group">
+                                    <label asp-for="Solucao" class="control-label">O que foi feito para resolver este problema?</label>
+                                    <textarea asp-for="Solucao" class="form-control text-bold" rows="6"
+                                              placeholder="Ex: Efetuado o reset da memória física do servidor e reiniciado o pool do IIS. Sistema voltou a operar normalmente." required></textarea>
+                                    <span asp-validation-for="Solucao" class="text-danger text-sm"></span>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Novo Status do Chamado</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text bg-success text-white"><i class="fas fa-toggle-on"></i></span>
+                                                </div>
+                                                <select asp-for="Status" class="form-control text-bold">
+                                                    <option value="Resolvido" selected>Resolvido (Encerrar)</option>
+                                                    <option value="Em Atendimento">Manter em Aberto / Pendente</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-success px-4">
+                                    <i class="fas fa-lock mr-2"></i>Finalizar e Salvar
+                                </button>
+                                <a asp-action="Index" class="btn btn-default float-right">
+                                    Voltar
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

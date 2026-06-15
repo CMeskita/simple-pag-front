@@ -1,0 +1,200 @@
+﻿@model Helpdesk.Models.Entity.Atendimento
+
+@{
+    ViewData["Title"] = "Registrar Atendimento - Helpdesk";
+}
+
+<div class="content-wrapper">
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0 text-dark"><i class="fas fa-ticket-alt mr-2"></i>Novo Atendimento</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item"><a asp-action="Index">Atendimentos</a></li>
+                        <li class="breadcrumb-item active">Novo Chamado</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="card card-outline card-info">
+                        <div class="card-heade m-2">
+                            <h3 class="card-title ">Abertura de Chamado / Registro de Incidente</h3>
+                            <span class="text-muted text-sm font-weight-bold float-right" id="tempoDecorrido">
+                                <i class="far fa-clock mr-1 text-warning"></i> Tempo decorrido: <span class="badge badge-secondary">02h 15m</span>
+                            </span>
+                        </div>
+
+                        <form asp-action="CriarAtendimento" enctype="multipart/form-data">
+                            <div class="card-body px-2">
+                                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label asp-for="Titulo" class="control-label">Título / Assunto Resumido</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-heading"></i></span>
+                                                </div>
+                                                <input asp-for="Titulo" class="form-control" placeholder="Ex: Erro ao emitir nota fiscal / Computador não liga" />
+                                            </div>
+                                            <span asp-validation-for="Titulo" class="text-danger text-sm"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                  
+                                        <div class="form-group">
+                                            <label asp-for="Solicitante" class="control-label">Nome do Solicitante</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                                </div>
+                                                <input asp-for="Solicitante" class="form-control" placeholder="Ex: João Silva" />
+                                            </div>
+                                            <span asp-validation-for="Solicitante" class="text-danger text-sm"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label asp-for="Categoria" class="control-label">Categoria do Problema</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-tags"></i></span>
+                                                </div>
+                                                <select asp-for="Categoria" class="form-control">
+                                                    <option value="">-- Selecione --</option>
+                                                    <option value="Hardware">Hardware (Computador, Monitor, Impressora)</option>
+                                                    <option value="Software">Software / Sistemas (ERP, E-mail)</option>
+                                                    <option value="Redes">Redes e Internet (Sem conexão, Wi-Fi)</option>
+                                                    <option value="Acessos">Acessos e Permissões (Reset de Senha)</option>
+                                                </select>
+                                            </div>
+                                            <span asp-validation-for="Categoria" class="text-danger text-sm"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label asp-for="Prioridade" class="control-label">Prioridade / Urgência</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-exclamation-triangle"></i></span>
+                                                </div>
+                                                <select asp-for="Prioridade" class="form-control">
+                                                    <option value="Baixa">Baixa (Não impede o trabalho)</option>
+                                                    <option value="Media" selected>Média (Trabalho parcial prejudicado)</option>
+                                                    <option value="Alta">Alta (Setor ou atividade paralisada)</option>
+                                                    <option value="Critica">Crítica (Faturamento/Operação Geral parada)</option>
+                                                </select>
+                                            </div>
+                                            <span asp-validation-for="Prioridade" class="text-danger text-sm"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label asp-for="UsuarioId" class="control-label"> Cliente Afetado</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"><i class="fas fa-building"></i></span>
+                                                </div>
+                                                <select asp-for="UsuarioId" class="form-control" asp-items="ViewBag.Usuarios">
+                                                    <option value="">-- Selecione o Solicitante --</option>
+                                                </select>
+                                            </div>
+                                            <span asp-validation-for="UsuarioId" class="text-danger text-sm"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label asp-for="Descricao" class="control-label">Descrição Detalhada do Incidente</label>
+                                            <textarea asp-for="Descricao" class="form-control" rows="5" placeholder="Descreva aqui com o máximo de detalhes possíveis o problema ocorrido, incluindo mensagens de erro ou passos para reproduzir o bug..."></textarea>
+                                            <span asp-validation-for="Descricao" class="text-danger text-sm"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label asp-for="Solucao" class="control-label">O que foi feito para resolver este problema?</label>
+                                            <textarea asp-for="Solucao" class="form-control text-bold" rows="6"
+                                                      placeholder="Ex: Efetuado o reset da memória física do servidor e reiniciado o pool do IIS. Sistema voltou a operar normalmente." required></textarea>
+                                            <span asp-validation-for="Solucao" class="text-danger text-sm"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="control-label">Anexar Evidência (Opcional)</label>
+                                            <div class="input-group">
+                                                <div class="custom-file">
+                                                    <input type="file" name="Anexo" class="custom-file-input" id="inputAnexo">
+                                                    <label class="custom-file-label" for="inputAnexo">Escolher imagem ou arquivo...</label>
+                                                </div>
+                                            </div>
+                                            <small class="form-text text-muted">Formatos permitidos: JPG, PNG, PDF (Máx: 5MB).</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card-footer px-4">
+                                <div class="row">
+                                    <div class="col-12 col-sm-auto mb-2 mb-sm-0">
+                                        <button type="submit" class="btn btn-info px-4 w-100">
+                                            <i class="fas fa-check mr-2"></i>Concluir Chamado
+                                        </button>
+                                    </div>
+
+                                    <div class="col d-none d-sm-block"></div>
+
+                                    <div class="col-12 col-sm-auto">
+                                        <a asp-action="Index" class="btn btn-default px-4 w-100">
+                                            <i class="fas fa-arrow-left mr-2"></i>Voltar para a Lista
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        $(document).ready(function () {
+            $('.custom-file-input').on('change', function () {
+                var fileName = $(this).val().split('\\').pop();
+                $(this).next('.custom-file-label').addClass("selected").html(fileName);
+            });
+        });
+    </script>
+}
